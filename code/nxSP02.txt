@@ -1,0 +1,8 @@
+live_loop :nxSP02 do
+  with_fx :gverb do
+    use_synth :prophet
+    play_pattern_timed [rrand(20.0,60.0),0,rrand(20.0,60.0),0],[rrand(10,30),rrand(10,30)], attack: rrand(10,30), release: rrand(1,5), cutoff: rrand(50.0,120.0), amp: 0.1
+  end
+end
+
+

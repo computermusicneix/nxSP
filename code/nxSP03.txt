@@ -1,0 +1,8 @@
+live_loop :nxSP03 do
+  with_fx :flanger, wave: 3, depth: 10,amp: 1 do
+    use_synth :dark_ambience
+    play_pattern_timed [rrand(30,70),rrand(30,70)],[rrand(10,100),rrand(10,100)], attack: rrand(10,100), release: rrand(10,100), amp: choose([2,0,1])
+  end
+end
+
+
